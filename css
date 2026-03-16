@@ -1,13 +1,65 @@
-button{
-    padding:10px;
-    margin-top:10px;
-    border:none;
-    background:#007BFF;
-    color:white;
-    cursor:pointer;
-    border-radius:5px;
+body{
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
 }
 
-button:hover{
-    background:#0056b3;
+form{
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+legend{
+    font-size:20px;
+    font-weight:bold;
+    color:#333;
+}
+
+label{
+    font-weight:600;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    margin-top:5px;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+input:focus, select:focus{
+    outline:none;
+    border-color:#4facfe;
+    box-shadow:0 0 5px rgba(79,172,254,0.5);
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button[type="submit"]{
+    background:#4facfe;
+    color:white;
+}
+
+button[type="submit"]:hover{
+    background:#2d8cf0;
+}
+
+button[type="reset"]{
+    background:#eee;
+    margin-top:10px;
 }
